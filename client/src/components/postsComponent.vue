@@ -66,8 +66,7 @@ export default {
 
         async deletePost(id){
             await axios.delete(url + id)
-             .then((deleted) => {
-                 // console.log(deleted.status)
+             .then(() => {
                  this.getAllPosts();
              });
         }
