@@ -7,7 +7,7 @@
             <hr>
             <label for="create-post">Double-click on item to delete</label>
             <div class="input-group mb-2">
-                <input type="text" id="create-post" v-model="text" class="form-control">
+                <input type="text" id="create-post" v-model="text" placeholder="Add a new post" class="form-control">
                 <div class="input-group-append">
                   <button class="btn btn-success" v-on:click="createPost">Add</button>
                 </div>
@@ -15,7 +15,7 @@
 
 
             <p v-if="error">{{ error }}</p>
-            <div placeholder="Add a new post"
+            <div 
                  v-for="(post, index) in posts"
                  v-bind:item="post"
                  v-bind:index="index"
