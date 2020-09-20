@@ -15,4 +15,4 @@ npm start
 npm install
 npm run serve
 ```
-Openn your browser and visit http://localhost:8080/
+Open your browser and visit http://localhost:8080/
